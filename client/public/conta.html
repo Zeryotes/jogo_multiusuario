@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de conta</title>
+
+    <style>
+        a {
+            text-decoration: none !important;
+            color: white !important;
+        }
+
+        button {
+            float: right;
+        }
+
+        form {
+            margin: 30px 20%
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg-body">
+        <h1 class="text-center pt-5 pb-3">Criando conta</h1>
+        <form action="login.html" class="border p-5 bg-light">
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Usuário:</label>
+              <input type="text" class="form-control" id="usuario">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha:</label>
+              <input type="password" class="form-control" id="senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Criar conta</button>
+        </form>
+    </div>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <script src="/game_client.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+#chat_global {
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    overflow-wrap: anywhere;
+}
+
+#chat_global ul li {
+    font-size: 14px;
+}
+
+#lista_jogadores ul {
+    margin-top: 1em;
+}
+
+#lista_chats_privados{
+
+}
+
+.chat_privado {
+    min-height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    overflow-wrap: anywhere;
+}
